@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.register.Controller">
+   <children>
+      <TabPane layoutY="-4.0" prefHeight="400.0" prefWidth="443.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Register">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="400.0" prefWidth="455.0">
+                           <children>
+                              <Label layoutX="106.0" layoutY="21.0" text="Registration">
+                                 <font>
+                                    <Font name="System Bold" size="49.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_RIGHT" layoutX="46.0" layoutY="112.0" text="Full name:" />
+                              <Label alignment="TOP_RIGHT" layoutX="46.0" layoutY="159.0" text="Phone number:" />
+                              <Label alignment="TOP_RIGHT" layoutX="46.0" layoutY="200.0" text="E-mail:" />
+                              <Label alignment="TOP_RIGHT" layoutX="46.0" layoutY="243.0" text="Password:" />
+                              <TextField fx:id="textName" layoutX="173.0" layoutY="108.0" onAction="#textNameHandler" prefHeight="25.0" prefWidth="258.0" />
+                              <TextField fx:id="textNum" layoutX="173.0" layoutY="155.0" onAction="#textNumHandler" prefHeight="25.0" prefWidth="258.0" />
+                              <TextField fx:id="textMail" layoutX="173.0" layoutY="196.0" onAction="#textMailHandler" prefHeight="25.0" prefWidth="258.0" />
+                              <PasswordField fx:id="textPass" layoutX="173.0" layoutY="239.0" onAction="#textPassHandler" prefHeight="25.0" prefWidth="258.0" />
+                              <Button fx:id="btnCA" layoutX="163.0" layoutY="296.0" mnemonicParsing="false" onAction="#btnCAHandler" text="Create account" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Log In">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                          <TextField fx:id="txtFieldMailLogin" layoutX="127.0" layoutY="101.0" prefHeight="25.0" prefWidth="176.0" />
+                          <TextField fx:id="textFieldPassLogin" layoutX="128.0" layoutY="141.0" prefHeight="25.0" prefWidth="175.0" />
+                          <Button fx:id="btnLogin" layoutX="151.0" layoutY="186.0" mnemonicParsing="false" onAction="#btnLoginHandler" prefHeight="52.0" prefWidth="129.0" text="Log in" />
+                          <Label fx:id="lblLogin" layoutX="120.0" layoutY="25.0" prefHeight="59.0" prefWidth="194.0" text="         Log In">
+                              <font>
+                                  <Font size="24.0" />
+                              </font>
+                          </Label>
+                          <Label fx:id="lblMail" layoutX="74.0" layoutY="105.0" text="E-mail:" />
+                          <Label fx:id="lblPass" layoutX="66.0" layoutY="145.0" text="Password:" />
+                    </children>
+                </AnchorPane>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
